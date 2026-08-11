@@ -1,0 +1,202 @@
+{
+  "app": {
+    "title": "NordicPump — Polttoaineiden hintavertailu",
+    "subtitle": "Julkiset polttoainehinnat"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "about": "Tietoja"
+  },
+  "about": {
+    "title": "Tietoja NordicPumpista",
+    "description": "NordicPump vertailee polttoaineiden hintoja reaaliajassa Ruotsissa, Tanskassa, Norjassa ja Suomessa. Tiedot ovat peräisin fuel-prices.eu:sta (CC BY 4.0) ja SSB Statbankista, ja ne päivitetään päivittäin."
+  },
+  "footer": {
+    "copyright": "© {{year}} NordicPump",
+    "dataSources": "Data fuel-prices.eu:sta (CC BY 4.0) ja SSB Statbankista"
+  },
+  "language": {
+    "selector": "Valitse kieli"
+  },
+  "country": {
+    "SE": "Ruotsi",
+    "DK": "Tanska",
+    "FI": "Suomi",
+    "NO": "Norja",
+    "selectorLabel": "Valitse maa",
+    "dropdownLabel": "Valitse maa",
+    "IS": "Islanti"
+  },
+  "pwa": {
+    "install": {
+      "message": "Asenna NordicPump nopeaa käyttöä ja offline-käyttöä varten.",
+      "button": "Asenna",
+      "dismiss": "Ei nyt",
+      "srAnnouncement": "NordicPump voidaan asentaa sovelluksena. Käytä sivun alaosassa olevaa asennuspainiketta.",
+      "ariaInstall": "Asenna NordicPump-sovellus",
+      "ariaDismiss": "Hylkää asennuskehote",
+      "eyebrow": "Aina saatavilla",
+      "title": "Asenna NordicPump",
+      "done": "Lisätty aloitusnäytölle"
+    },
+    "offline": {
+      "title": "Olet offline-tilassa",
+      "description": "Jotkin toiminnot eivät ehkä ole käytettävissä. Tarkista internetyhteytesi ja yritä uudelleen.",
+      "retry": "Yritä uudelleen",
+      "cachedData": "Näytetään välimuistissa olevia tietoja {{date}}",
+      "cachedGeneric": "Katsot välimuistitietoja. Jotkin tiedot voivat olla vanhentuneita.",
+      "staleData": "Tiedot ovat {{hours}} tuntia vanhoja. Viimeksi päivitetty {{date}}."
+    }
+  },
+  "dashboard": {
+    "price": {
+      "euro95": "Euro 95",
+      "diesel": "Diesel",
+      "perLiter": "kr/litra",
+      "error": "Hintojen haku epäonnistui",
+      "retry": "Yritä uudelleen",
+      "loading": "Ladataan hintoja...",
+      "chartTitle": "Hintahistoria",
+      "dateColumn": "Päivämäärä",
+      "fuel": "Polttoaine",
+      "priceColumn": "Hinta (SEK)",
+      "eurColumn": "EUR",
+      "noData": "Ei tietoja saatavilla",
+      "nativeColumn": "Paikallinen valuutta",
+      "sekColumn": "SEK"
+    },
+    "compare": {
+      "title": "Naapurivertailu",
+      "country": "Maa",
+      "fuel": "Polttoaine",
+      "priceSEK": "Hinta (SEK)",
+      "error": "Hintojen vertailu epäonnistui",
+      "unavailable": "Tietoja ei saatavilla",
+      "noData": "Ei vertailutietoja",
+      "countrySE": "Ruotsi",
+      "countryDK": "Tanska",
+      "countryFI": "Suomi",
+      "countryNO": "Norja",
+      "countryIS": "Islanti",
+      "sekLabel": "SEK"
+    },
+    "tax": {
+      "title": "Verojakauma",
+      "product": "Tuotekustannus",
+      "excise": "Valmistevero",
+      "vat": "ALV",
+      "other": "Muut verot",
+      "fuel": "Polttoaine",
+      "error": "Verotietojen haku epäonnistui",
+      "derivedNote": "Arvioitu Ruotsin viitearvoista — todellista jakaumaa ei saatavilla",
+      "noData": "Ei verotietoja",
+      "sekLabel": "SEK",
+      "total": "Yhteensä",
+      "base": "Perushinta",
+      "legend": "Värisymboliikka — segmentit polttoaineittain"
+    },
+    "seasonality": {
+      "title": "Kausivaihtelut",
+      "month": "Kuukausi",
+      "insufficientData": "Riittämättömästi tietoja — tarvitaan vähintään 3 kuukautta historiaa",
+      "error": "Kausitietojen haku epäonnistui",
+      "noData": "Ei kausitietoja",
+      "peak": "Huippu",
+      "sekLabel": "SEK",
+      "months": {
+        "0": "tammi",
+        "1": "helmi",
+        "2": "maalis",
+        "3": "huhti",
+        "4": "touko",
+        "5": "kesä",
+        "6": "heinä",
+        "7": "elo",
+        "8": "syys",
+        "9": "loka",
+        "10": "marras",
+        "11": "joulu"
+      }
+    },
+    "tank": {
+      "title": "Tankkilaskuri",
+      "liters": "Tankin koko (litraa)",
+      "inputLabel": "Tankin kapasiteetti litroina",
+      "cost": "{{liters}}L täyttö maksaa",
+      "vs": "vs",
+      "native": "valuuttana {{currency}}",
+      "savings": "Säästät {{amount}} kr polttoaineella {{fuel}}",
+      "noSaving": "Sama hinta molemmille polttoaineille",
+      "error": "Kustannusta ei voitu laskea",
+      "noPrice": "Hintatietoja ei saatavilla",
+      "retry": "Laske uudelleen",
+      "savingsLabel": "Ero Euro 95 vs Diesel",
+      "recalc": "Päivitä",
+      "savingsPositive": "Säästät",
+      "savingsNegative": "Diesel on halvempi",
+      "costValue": "{{liters}}L täyttö maksaa {{amount}}"
+    },
+    "trend": {
+      "up": "nousu",
+      "down": "lasku",
+      "neutral": "vakaa"
+    },
+    "onboarding": {
+      "message": "👋 Valitse maasi nähdäksesi polttoainehinnat. Vieritä alas kaavioita ja säästölaskuria varten.",
+      "dismissAria": "Sulje esittelyviesti",
+      "gotIt": "Selvä",
+      "backToTop": "Takaisin alkuun"
+    },
+    "hero": {
+      "eyebrow": "Pohjoismainen paneeli",
+      "title": "Selkeät hinnat nopeisiin päätöksiin.",
+      "subtitle": "Vertaa nykyistä hintaa, ymmärrä kehitystä ja laske, paljonko tankin täyttäminen maksaa.",
+      "cacheNote": "Näytetään synkronoidut tiedot"
+    },
+    "market": {
+      "title": "Valittu markkina",
+      "subtitle": "Paikallinen valuutta"
+    },
+    "current": {
+      "title": "Nykyinen hinta",
+      "updatedLabel": "Päivitetty viimeksi",
+      "updatedMeta": "Julkinen lähde",
+      "dataNote": "Julkista dataa"
+    },
+    "charts": {
+      "title": "Markkinalukemat",
+      "subtitle": "Visuaalinen vertailu · viimeiset 12 kuukautta",
+      "fuelLabel": "Bensiini 95 · kr/l",
+      "compareSubtitle": "Nykyinen keskiarvo · kr/l",
+      "taxSubtitle": "Bensiini 95 · koostumus",
+      "seasonSubtitle": "Suhteellinen indeksi kuukausittain",
+      "months": "kuukautta",
+      "markets": "markkinaa",
+      "year": "2026"
+    },
+    "tokens": {
+      "title": "Suunnittelutokenit",
+      "subtitle": "Visuaalinen lähde · vaalea ↔ tumma",
+      "badge": "tokenit",
+      "role": "Rooli",
+      "light": "Vaalea",
+      "dark": "Tumma",
+      "usage": "Käyttö",
+      "bgUsage": "Canvas",
+      "surfaceUsage": "Kortit ja kentät",
+      "textUsage": "Pääsisältö",
+      "primaryUsage": "Toiminta ja valinta",
+      "accentUsage": "Korostukset ja ilmoitukset"
+    }
+  },
+  "paginator": {
+    "aria": "Taulukon sivut",
+    "prev": "Edellinen sivu",
+    "next": "Seuraava sivu",
+    "page": "Sivu"
+  },
+  "header": {
+    "online": "Tiedot synkronoitu",
+    "offline": "Offline"
+  }
+}

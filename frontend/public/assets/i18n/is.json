@@ -1,0 +1,210 @@
+{
+  "app": {
+    "title": "NordicPump",
+    "subtitle": "Opinberir eldsneytisverðir",
+    "description": "Samanburður á eldsneytisverði á Norðurlöndunum"
+  },
+  "nav": {
+    "dashboard": "Mælaborð",
+    "about": "Um"
+  },
+  "about": {
+    "title": "Um NordicPump",
+    "intro": "NordicPump ber saman eldsneytisverð á Norðurlöndunum: Svíþjóð, Danmörk, Finnlandi, Noregi og Íslandi.",
+    "sources": "Gögn frá opinberum aðilum:",
+    "sourceEu": "fuel-prices.eu (Evrópunefnd)",
+    "sourceSsb": "Statistics Norway (SSB)",
+    "sourceGasvaktin": "Gasvaktin (Ísland)",
+    "back": "Til baka"
+  },
+  "footer": {
+    "rights": "© 2026 NordicPump",
+    "sources": "Gögn frá fuel-prices.eu (CC BY 4.0), SSB Statbank og Gasvaktin",
+    "disclaimer": "Verð geta breyst. Staðfestu alltaf á bensínstöð."
+  },
+  "language": {
+    "label": "Tungumál",
+    "switchTo": "Skipta um tungumál"
+  },
+  "country": {
+    "SE": "Svíþjóð",
+    "DK": "Danmörk",
+    "FI": "Finnland",
+    "NO": "Noregur",
+    "IS": "Ísland",
+    "selectorLabel": "Veldu land",
+    "dropdownLabel": "Veldu land"
+  },
+  "pwa": {
+    "install": {
+      "message": "Settu upp NordicPump fyrir hraðan aðgang og án nettengingar.",
+      "button": "Setja upp",
+      "dismiss": "Ekki núna",
+      "srAnnouncement": "Hægt er að setja NordicPump upp sem app. Notaðu uppsetningarhnappinn neðst á síðunni.",
+      "ariaInstall": "Setja upp NordicPump-appið",
+      "ariaDismiss": "Hafna uppsetningarbeiðni",
+      "eyebrow": "Alltaf aðgengilegt",
+      "title": "Setja upp NordicPump",
+      "done": "Bætt við á heimaskjáinn"
+    },
+    "offline": {
+      "title": "Þú ert án nettengingar",
+      "description": "Sumir eiginleikar gætu ekki verið aðgengilegir. Athugaðu nettenginguna þína og reyndu aftur.",
+      "retry": "Reyna aftur",
+      "cachedData": "Sýnir skyndiminnisgögn frá {{date}}",
+      "cachedGeneric": "Þú ert að skoða skyndiminnisgögn. Sumar upplýsingar gætu verið úreltar.",
+      "staleData": "Gögnin eru {{hours}} klukkustunda gömul. Síðast uppfært {{date}}."
+    }
+  },
+  "dashboard": {
+    "price": {
+      "euro95": "Bensín 95",
+      "diesel": "Dísel",
+      "perLiter": "kr/lítri",
+      "error": "Ekki tókst að sækja verð",
+      "retry": "Reyna aftur",
+      "loading": "Sæki verð...",
+      "chartTitle": "Verðsaga",
+      "dateColumn": "Dagsetning",
+      "fuel": "Eldsneyti",
+      "priceColumn": "Verð",
+      "eurColumn": "EUR",
+      "noData": "Engin verðgögn",
+      "nativeColumn": "Staðbundinn gjaldmiðill",
+      "sekColumn": "SEK"
+    },
+    "compare": {
+      "title": "Nágrannasamanburður",
+      "country": "Land",
+      "fuel": "Eldsneyti",
+      "priceSEK": "Verð",
+      "error": "Ekki tókst að sækja samanburð",
+      "unavailable": "Gögn ekki tiltæk",
+      "noData": "Engin gögn",
+      "countrySE": "Svíþjóð",
+      "countryDK": "Danmörk",
+      "countryFI": "Finnland",
+      "countryNO": "Noregur",
+      "countryIS": "Ísland",
+      "sekLabel": "SEK"
+    },
+    "tax": {
+      "title": "Skattaskipting",
+      "product": "Vörukostnaður",
+      "excise": "Vörugjald",
+      "vat": "VSK",
+      "other": "Aðrir skattar",
+      "fuel": "Eldsneyti",
+      "error": "Ekki tókst að sækja skattagögn",
+      "derivedNote": "Áætlað út frá sænskum viðmiðum — raunveruleg skipting ekki tiltæk",
+      "noData": "Engin skattagögn",
+      "sekLabel": "SEK",
+      "total": "Samtals",
+      "base": "Grunnverð",
+      "legend": "Simbología de colores — segmentos por combustible"
+    },
+    "seasonality": {
+      "title": "Tendencias Estacionales",
+      "month": "Mes",
+      "insufficientData": "Datos insuficientes — se necesitan al menos 3 meses de historial",
+      "error": "No se pudieron obtener datos estacionales",
+      "noData": "Sin datos estacionales",
+      "peak": "Máximo",
+      "sekLabel": "SEK",
+      "months": {
+        "0": "ene",
+        "1": "feb",
+        "2": "mar",
+        "3": "abr",
+        "4": "may",
+        "5": "jun",
+        "6": "jul",
+        "7": "ago",
+        "8": "sep",
+        "9": "oct",
+        "10": "nov",
+        "11": "dic"
+      }
+    },
+    "tank": {
+      "title": "Tankreiknivél",
+      "liters": "Tankstærð (lítra)",
+      "inputLabel": "Tankgeta í lítrum",
+      "cost": "Llenar {{liters}}L cuesta",
+      "vs": "vs",
+      "native": "en {{currency}}",
+      "savings": "Ahorras {{amount}} kr con {{fuel}}",
+      "noSaving": "Sama verð fyrir bæði eldsneyti",
+      "error": "Ekki tókst að reikna kostnað",
+      "noPrice": "Verðgögn ekki tiltæk",
+      "retry": "Reikna aftur",
+      "savingsLabel": "Mismunur Bensín 95 vs Dísel",
+      "recalc": "Actualizar",
+      "savingsPositive": "Þú sparar",
+      "savingsNegative": "Dísel er ódýrari",
+      "costValue": "Að fylla {{liters}}L kostar {{amount}}"
+    },
+    "trend": {
+      "up": "hækkaði",
+      "down": "lækkaði",
+      "neutral": "óbreytt"
+    },
+    "onboarding": {
+      "message": "Veldu land til að sjá eldsneytisverð. Skrunaðu niður fyrir línurit og sparnaðarreiknivél.",
+      "dismissAria": "Loka kynningarskilaboðum",
+      "gotIt": "Skil",
+      "backToTop": "Fara efst"
+    },
+    "hero": {
+      "eyebrow": "Norræn spjaldið",
+      "title": "Skýr verð fyrir skjótar ákvarðanir.",
+      "subtitle": "Berið saman núverandi verð, skiljið þróunina og reiknið út hvað það kostar að fylla tankinn.",
+      "cacheNote": "Sýnir samstillt gögn"
+    },
+    "market": {
+      "title": "Valinn markaður",
+      "subtitle": "Staðbundin gjaldmiðill"
+    },
+    "current": {
+      "title": "Núverandi verð",
+      "updatedLabel": "Síðast uppfært",
+      "updatedMeta": "Opinber heimild",
+      "dataNote": "Opinber gögn"
+    },
+    "charts": {
+      "title": "Markaðslestur",
+      "subtitle": "Sjónrænn samanburður · síðustu 12 mánuðir",
+      "fuelLabel": "Bensín 95 · kr/l",
+      "compareSubtitle": "Núverandi meðalverð · kr/l",
+      "taxSubtitle": "Bensín 95 · samsetning",
+      "seasonSubtitle": "Hlutfallslegt vísitala eftir mánuðum",
+      "months": "mánuðir",
+      "markets": "markaðir",
+      "year": "2026"
+    },
+    "tokens": {
+      "title": "Panel de tokens",
+      "subtitle": "Fuente de verdad visual · claro ↔ oscuro",
+      "badge": "tokens",
+      "role": "Rol",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "usage": "Uso",
+      "bgUsage": "Canvas",
+      "surfaceUsage": "Tarjetas e inputs",
+      "textUsage": "Contenido principal",
+      "primaryUsage": "Acción y selección",
+      "accentUsage": "Highlights y avisos"
+    }
+  },
+  "paginator": {
+    "page": "Síða",
+    "previous": "Fyrri síða",
+    "next": "Næsta síða",
+    "of": "af"
+  },
+  "header": {
+    "online": "Gögn samstillt",
+    "offline": "Ótengt"
+  }
+}

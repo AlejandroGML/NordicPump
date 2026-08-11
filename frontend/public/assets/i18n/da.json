@@ -1,0 +1,202 @@
+{
+  "app": {
+    "title": "NordicPump — Brændstofprissammenligning",
+    "subtitle": "Offentlige brændstofpriser"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "about": "Om"
+  },
+  "about": {
+    "title": "Om NordicPump",
+    "description": "NordicPump sammenligner brændstofpriser i realtid på tværs af Sverige, Danmark, Norge og Finland. Data hentes fra fuel-prices.eu (CC BY 4.0) og SSB Statbank, med daglige opdateringer."
+  },
+  "footer": {
+    "copyright": "© {{year}} NordicPump",
+    "dataSources": "Data fra fuel-prices.eu (CC BY 4.0) og SSB Statbank"
+  },
+  "language": {
+    "selector": "Vælg sprog"
+  },
+  "country": {
+    "SE": "Sverige",
+    "DK": "Danmark",
+    "FI": "Finland",
+    "NO": "Norge",
+    "selectorLabel": "Vælg land",
+    "dropdownLabel": "Vælg land",
+    "IS": "Island"
+  },
+  "pwa": {
+    "install": {
+      "message": "Installer NordicPump til hurtig adgang og offline brug.",
+      "button": "Installer",
+      "dismiss": "Ikke nu",
+      "srAnnouncement": "NordicPump kan installeres som en app. Brug installationsknappen nederst på siden.",
+      "ariaInstall": "Installer NordicPump-appen",
+      "ariaDismiss": "Afvis installationsanmodning",
+      "eyebrow": "Altid tilgængelig",
+      "title": "Installer NordicPump",
+      "done": "Tilføjet til startskærmen"
+    },
+    "offline": {
+      "title": "Du er offline",
+      "description": "Nogle funktioner er muligvis ikke tilgængelige. Kontroller din internetforbindelse og prøv igen.",
+      "retry": "Prøv igen",
+      "cachedData": "Viser cached data fra {{date}}",
+      "cachedGeneric": "Du ser cached data. Nogle oplysninger kan være forældede.",
+      "staleData": "Data er {{hours}} timer gammel. Senest opdateret {{date}}."
+    }
+  },
+  "dashboard": {
+    "price": {
+      "euro95": "Euro 95",
+      "diesel": "Diesel",
+      "perLiter": "kr/liter",
+      "error": "Kunne ikke hente priser",
+      "retry": "Prøv igen",
+      "loading": "Indlæser priser...",
+      "chartTitle": "Prishistorik",
+      "dateColumn": "Dato",
+      "fuel": "Brændstof",
+      "priceColumn": "Pris (SEK)",
+      "eurColumn": "EUR",
+      "noData": "Ingen data tilgængelig",
+      "nativeColumn": "Lokal valuta",
+      "sekColumn": "SEK"
+    },
+    "compare": {
+      "title": "Nabosammenligning",
+      "country": "Land",
+      "fuel": "Brændstof",
+      "priceSEK": "Pris (SEK)",
+      "error": "Kunne ikke sammenligne priser",
+      "unavailable": "Data ikke tilgængelig",
+      "noData": "Ingen sammenligningsdata",
+      "countrySE": "Sverige",
+      "countryDK": "Danmark",
+      "countryFI": "Finland",
+      "countryNO": "Norge",
+      "countryIS": "Island",
+      "sekLabel": "SEK"
+    },
+    "tax": {
+      "title": "Skattefordeling",
+      "product": "Produktomkostning",
+      "excise": "Punktafgift",
+      "vat": "Moms",
+      "other": "Andre skatter",
+      "fuel": "Brændstof",
+      "error": "Kunne ikke hente skattedata",
+      "derivedNote": "Estimeret fra svenske referenceværdier — faktisk fordeling ikke tilgængelig",
+      "noData": "Ingen skattedata",
+      "sekLabel": "SEK",
+      "total": "Total",
+      "base": "Basispris",
+      "legend": "Farvesymbolik — segment pr. brændstof"
+    },
+    "seasonality": {
+      "title": "Sæsontendenser",
+      "month": "Måned",
+      "insufficientData": "Utilstrækkelig data — kræver mindst 3 måneders historik",
+      "error": "Kunne ikke hente sæsondata",
+      "noData": "Ingen sæsondata",
+      "peak": "Top",
+      "sekLabel": "SEK",
+      "months": {
+        "0": "jan",
+        "1": "feb",
+        "2": "mar",
+        "3": "apr",
+        "4": "maj",
+        "5": "jun",
+        "6": "jul",
+        "7": "aug",
+        "8": "sep",
+        "9": "okt",
+        "10": "nov",
+        "11": "dec"
+      }
+    },
+    "tank": {
+      "title": "Tankberegner",
+      "liters": "Tankstørrelse (liter)",
+      "inputLabel": "Tankkapacitet i liter",
+      "cost": "Fylde {{liters}}L koster",
+      "vs": "mod",
+      "native": "i {{currency}}",
+      "savings": "Du sparer {{amount}} kr med {{fuel}}",
+      "noSaving": "Samme pris for begge brændstoffer",
+      "error": "Kunne ikke beregne omkostning",
+      "noPrice": "Prisdata ikke tilgængelig",
+      "retry": "Beregn igen",
+      "savingsLabel": "Forskel Euro 95 vs Diesel",
+      "recalc": "Opdater",
+      "savingsPositive": "Du sparer",
+      "savingsNegative": "Diesel er billigere",
+      "costValue": "At fylde {{liters}}L koster {{amount}}"
+    },
+    "trend": {
+      "up": "op",
+      "down": "ned",
+      "neutral": "stabil"
+    },
+    "onboarding": {
+      "message": "👋 Vælg dit land for at se brændstofpriser. Rul ned for diagrammer og spareberegner.",
+      "dismissAria": "Luk velkomstbesked",
+      "gotIt": "Forstået",
+      "backToTop": "Tilbage til toppen"
+    },
+    "hero": {
+      "eyebrow": "Nordisk panel",
+      "title": "Klare priser til hurtige beslutninger.",
+      "subtitle": "Sammenlign den aktuelle pris, forstå udviklingen og beregn, hvad det koster at fylde tanken.",
+      "cacheNote": "Viser synkroniserede data"
+    },
+    "market": {
+      "title": "Valgt marked",
+      "subtitle": "Lokal valuta"
+    },
+    "current": {
+      "title": "Aktuel pris",
+      "updatedLabel": "Sidst opdateret",
+      "updatedMeta": "Offentlig kilde",
+      "dataNote": "Offentlige data"
+    },
+    "charts": {
+      "title": "Markedsaflæsninger",
+      "subtitle": "Visuel sammenligning · sidste 12 måneder",
+      "fuelLabel": "Benzin 95 · kr/l",
+      "compareSubtitle": "Aktuelt gennemsnit · kr/l",
+      "taxSubtitle": "Benzin 95 · sammensætning",
+      "seasonSubtitle": "Relativt indeks pr. måned",
+      "months": "måneder",
+      "markets": "markeder",
+      "year": "2026"
+    },
+    "tokens": {
+      "title": "Designtokens",
+      "subtitle": "Visuel kilde · lys ↔ mørk",
+      "badge": "tokens",
+      "role": "Rolle",
+      "light": "Lys",
+      "dark": "Mørk",
+      "usage": "Anvendelse",
+      "bgUsage": "Canvas",
+      "surfaceUsage": "Kort og felter",
+      "textUsage": "Hovedindhold",
+      "primaryUsage": "Handling og markering",
+      "accentUsage": "Fremhævninger og notifikationer"
+    }
+  },
+  "paginator": {
+    "aria": "Tabelpaginering",
+    "prev": "Forrige side",
+    "next": "Næste side",
+    "page": "Side"
+  },
+  "header": {
+    "online": "Data synkroniseret",
+    "offline": "Offline"
+  }
+}

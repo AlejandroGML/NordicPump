@@ -1,0 +1,38 @@
+# fuel-prices.eu
+
+> European Fuel Price Data Platform — Weekly petrol and diesel prices for all EU member states since 2005. Source: European Commission Oil Bulletin.
+
+Last updated: 2026-06-22
+EU Average: Euro 95 €1.728/L | Diesel €1.713/L
+EUR/USD: $1.1525 (ECB daily rate) | EU Avg in USD/gal: E95 $7.54 | Diesel $7.47
+## Current Fuel Prices — All Countries (Sorted: Cheapest Petrol First)
+
+CC   Country                  Euro95/L   Diesel/L    E95 $/gal    Dsl $/gal   E95 vs EU avg    Diesel vs EU     Tax%
+----------------------------------------------------------------------------------------------------------------
+MT   Malta                  €   1.340 €   1.210 $5.85      $5.28              -22.4%         -29.3%   56.3%
+PL   Poland                 €   1.381 €   1.404 $6.02      $6.13              -20.1%         -18.0%   38.3%
+ES   Spain                  €   1.460 €   1.539 $6.37      $6.71              -15.5%         -10.1%   33.7%
+BG   Bulgaria               €   1.496 €   1.539 $6.53      $6.71              -13.4%         -10.1%   40.9%
+SE   Sweden                 €   1.535 €   1.702 $6.70      $7.43              -11.2%          -0.6%   43.5%
+CY   Cyprus                 €   1.539 €   1.688 $6.71      $7.36              -10.9%          -1.4%   44.5%
+SI   Slovenia               €   1.601 €   1.711 $6.98      $7.46               -7.3%          -0.1%   50.3%
+CZ   Czechia                €   1.605 €   1.473 $7.00      $6.43               -7.1%         -14.0%   50.4%
+HR   Croatia                €   1.617 €   1.703 $7.05      $7.43               -6.4%          -0.6%   45.5%
+RO   Romania                €   1.634 €   1.729 $7.13      $7.54               -5.4%          +1.0%   53.1%
+HU   Hungary                €   1.637 €   1.680 $7.14      $7.33               -5.3%          -1.9%   45.6%
+LU   Luxembourg             €   1.648 €   1.623 $7.19      $7.08               -4.6%          -5.2%   49.1%
+AT   Austria                €   1.650 €   1.724 $7.20      $7.52               -4.5%          +0.7%   52.7%
+SK   Slovakia               €   1.653 €   1.526 $7.21      $6.66               -4.3%         -10.9%   52.2%
+EE   Estonia                €   1.656 €   1.596 $7.22      $6.96               -4.2%          -6.8%   53.8%
+LT   Lithuania              €   1.685 €   1.765 $7.35      $7.70               -2.5%          +3.1%   50.7%
+BE   Belgium                €   1.768 €   1.860 $7.71      $8.11               +2.3%          +8.6%   51.3%
+IE   Ireland                €   1.794 €   1.807 $7.83      $7.88               +3.8%          +5.5%   52.4%
+LV   Latvia                 €   1.797 €   1.786 $7.84      $7.79               +4.0%          +4.3%   52.1%
+IT   Italy                  €   1.850 €   1.949 $8.07      $8.50               +7.1%         +13.8%   51.7%
+DE   Germany                €   1.870 €   1.729 $8.16      $7.54               +8.2%          +1.0%   51.4%
+PT   Portugal               €   1.882 €   1.779 $8.21      $7.76               +8.9%          +3.9%   51.9%
+GR   Greece                 €   1.932 €   1.641 $8.43      $7.16              +11.8%          -4.2%   56.4%
+FR   France                 €   1.952 €   1.890 $8.52      $8.25              +13.0%         +10.4%   52.0%
+FI   Finland                €   2.152 €   2.173 $9.39      $9.48              +24.5%         +26.9%   53.9%
+NL   Netherlands            €   2.206 €   2.032 $9.62      $8.86              +27.7%         +18.7%   55.8%
+DK   Denmark                €   2.312 €   1.980 $10.09      $8.64              +33.8%         +15.6%   50.7%

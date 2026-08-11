@@ -1,0 +1,202 @@
+{
+  "app": {
+    "title": "NordicPump — Fuel Price Comparison",
+    "subtitle": "Public fuel prices"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "about": "About"
+  },
+  "about": {
+    "title": "About NordicPump",
+    "description": "NordicPump compares fuel prices in real time across Sweden, Denmark, Norway, and Finland. Data is sourced from fuel-prices.eu (CC BY 4.0) and SSB Statbank, with daily updates."
+  },
+  "footer": {
+    "copyright": "© {{year}} NordicPump",
+    "dataSources": "Data from fuel-prices.eu (CC BY 4.0) and SSB Statbank"
+  },
+  "language": {
+    "selector": "Select Language"
+  },
+  "country": {
+    "SE": "Sweden",
+    "DK": "Denmark",
+    "FI": "Finland",
+    "NO": "Norway",
+    "selectorLabel": "Select country",
+    "dropdownLabel": "Select country",
+    "IS": "Iceland"
+  },
+  "pwa": {
+    "install": {
+      "message": "Install NordicPump for quick access and offline use.",
+      "button": "Install",
+      "dismiss": "Not now",
+      "srAnnouncement": "NordicPump can be installed as an app. Use the install button at the bottom of the page.",
+      "ariaInstall": "Install NordicPump app",
+      "ariaDismiss": "Dismiss install prompt",
+      "eyebrow": "Always available",
+      "title": "Install NordicPump",
+      "done": "Added to home screen"
+    },
+    "offline": {
+      "title": "You're offline",
+      "description": "Some features may be unavailable. Please check your internet connection and try again.",
+      "retry": "Try Again",
+      "cachedData": "Showing cached data from {{date}}",
+      "cachedGeneric": "You're viewing cached data. Some information may be outdated.",
+      "staleData": "Data is {{hours}} hours old. Last updated {{date}}."
+    }
+  },
+  "dashboard": {
+    "price": {
+      "euro95": "Euro 95",
+      "diesel": "Diesel",
+      "perLiter": "kr/liter",
+      "error": "Could not fetch prices",
+      "retry": "Try again",
+      "loading": "Loading prices...",
+      "chartTitle": "Price History",
+      "dateColumn": "Date",
+      "fuel": "Fuel",
+      "priceColumn": "Price (SEK)",
+      "eurColumn": "EUR",
+      "noData": "No data available",
+      "nativeColumn": "Native",
+      "sekColumn": "SEK"
+    },
+    "compare": {
+      "title": "Neighbor Comparison",
+      "country": "Country",
+      "fuel": "Fuel",
+      "priceSEK": "Price (SEK)",
+      "error": "Could not compare prices",
+      "unavailable": "Data unavailable",
+      "noData": "No comparison data available",
+      "countrySE": "Sweden",
+      "countryDK": "Denmark",
+      "countryFI": "Finland",
+      "countryNO": "Norway",
+      "countryIS": "Iceland",
+      "sekLabel": "SEK"
+    },
+    "tax": {
+      "title": "Tax Breakdown",
+      "product": "Product Cost",
+      "excise": "Excise Duty",
+      "vat": "VAT",
+      "other": "Other Taxes",
+      "fuel": "Fuel",
+      "error": "Could not fetch tax breakdown",
+      "derivedNote": "Estimated from Swedish reference rates — actual breakdown not available",
+      "noData": "No tax data available",
+      "sekLabel": "SEK",
+      "total": "Total",
+      "base": "Base Price",
+      "legend": "Colour key — segments per fuel"
+    },
+    "seasonality": {
+      "title": "Seasonal Trends",
+      "month": "Month",
+      "insufficientData": "Insufficient data — need at least 3 months of history",
+      "error": "Could not fetch seasonality data",
+      "noData": "No seasonal data available",
+      "peak": "Peak",
+      "sekLabel": "SEK",
+      "months": {
+        "0": "Jan",
+        "1": "Feb",
+        "2": "Mar",
+        "3": "Apr",
+        "4": "May",
+        "5": "Jun",
+        "6": "Jul",
+        "7": "Aug",
+        "8": "Sep",
+        "9": "Oct",
+        "10": "Nov",
+        "11": "Dec"
+      }
+    },
+    "tank": {
+      "title": "Tank Calculator",
+      "liters": "Tank size (liters)",
+      "inputLabel": "Tank capacity in liters",
+      "cost": "Filling {{liters}}L costs",
+      "vs": "vs",
+      "native": "in {{currency}}",
+      "savings": "You save {{amount}} kr with {{fuel}}",
+      "noSaving": "Same price for both fuels",
+      "error": "Could not calculate cost",
+      "noPrice": "Price data not available",
+      "retry": "Retry calculation",
+      "savingsLabel": "Euro 95 vs Diesel difference",
+      "recalc": "Update",
+      "savingsPositive": "You save",
+      "savingsNegative": "Diesel is cheaper",
+      "costValue": "Filling {{liters}}L costs {{amount}}"
+    },
+    "trend": {
+      "up": "up",
+      "down": "down",
+      "neutral": "stable"
+    },
+    "onboarding": {
+      "message": "👋 Select your country to see fuel prices. Scroll down for charts and savings calculator.",
+      "dismissAria": "Dismiss onboarding message",
+      "gotIt": "Got it",
+      "backToTop": "Back to top"
+    },
+    "hero": {
+      "eyebrow": "Nordic panel",
+      "title": "Clear prices for quick decisions.",
+      "subtitle": "Compare the current price, understand its evolution and calculate how much filling your tank will cost.",
+      "cacheNote": "Showing synced data"
+    },
+    "market": {
+      "title": "Selected market",
+      "subtitle": "Local currency"
+    },
+    "current": {
+      "title": "Current price",
+      "updatedLabel": "Last updated",
+      "updatedMeta": "Public source",
+      "dataNote": "Public data"
+    },
+    "charts": {
+      "title": "Market readings",
+      "subtitle": "Visual comparison · last 12 months",
+      "fuelLabel": "Euro 95 · kr/l",
+      "compareSubtitle": "Current average · kr/l",
+      "taxSubtitle": "Euro 95 · composition",
+      "seasonSubtitle": "Relative index by month",
+      "months": "months",
+      "markets": "markets",
+      "year": "2026"
+    },
+    "tokens": {
+      "title": "Design tokens",
+      "subtitle": "Visual source · light ↔ dark",
+      "badge": "tokens",
+      "role": "Role",
+      "light": "Light",
+      "dark": "Dark",
+      "usage": "Usage",
+      "bgUsage": "Canvas",
+      "surfaceUsage": "Cards and inputs",
+      "textUsage": "Main content",
+      "primaryUsage": "Action and selection",
+      "accentUsage": "Highlights and notices"
+    }
+  },
+  "paginator": {
+    "aria": "Table pagination",
+    "prev": "Previous page",
+    "next": "Next page",
+    "page": "Page"
+  },
+  "header": {
+    "online": "Data synced",
+    "offline": "Offline"
+  }
+}

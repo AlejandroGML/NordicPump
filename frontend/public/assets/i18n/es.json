@@ -1,0 +1,202 @@
+{
+  "app": {
+    "title": "NordicPump — Comparador de Precios de Combustible",
+    "subtitle": "Precios públicos de combustible"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "about": "Acerca de"
+  },
+  "about": {
+    "title": "Acerca de NordicPump",
+    "description": "NordicPump compara precios de combustible en tiempo real en Suecia, Dinamarca, Noruega y Finlandia. Los datos provienen de fuel-prices.eu (CC BY 4.0) y SSB Statbank, con actualizaciones diarias."
+  },
+  "footer": {
+    "copyright": "© {{year}} NordicPump",
+    "dataSources": "Datos de fuel-prices.eu (CC BY 4.0) y SSB Statbank"
+  },
+  "language": {
+    "selector": "Seleccionar idioma"
+  },
+  "country": {
+    "SE": "Suecia",
+    "DK": "Dinamarca",
+    "FI": "Finlandia",
+    "NO": "Noruega",
+    "selectorLabel": "Seleccionar país",
+    "dropdownLabel": "Seleccionar país",
+    "IS": "Islandia"
+  },
+  "pwa": {
+    "install": {
+      "message": "Instala NordicPump para acceso rápido y uso sin conexión.",
+      "button": "Instalar",
+      "dismiss": "Ahora no",
+      "srAnnouncement": "NordicPump se puede instalar como una aplicación. Usa el botón de instalar al final de la página.",
+      "ariaInstall": "Instalar la aplicación NordicPump",
+      "ariaDismiss": "Descartar solicitud de instalación",
+      "eyebrow": "Siempre disponible",
+      "title": "Instala NordicPump",
+      "done": "Añadido a inicio"
+    },
+    "offline": {
+      "title": "Estás fuera de línea",
+      "description": "Es posible que algunas funciones no estén disponibles. Verifica tu conexión a internet e inténtalo de nuevo.",
+      "retry": "Reintentar",
+      "cachedData": "Mostrando datos en caché desde {{date}}",
+      "cachedGeneric": "Estás viendo datos en caché. Es posible que alguna información esté desactualizada.",
+      "staleData": "Los datos tienen {{hours}} horas de antigüedad. Última actualización {{date}}."
+    }
+  },
+  "dashboard": {
+    "price": {
+      "euro95": "Euro 95",
+      "diesel": "Diésel",
+      "perLiter": "kr/litro",
+      "error": "No se pudieron obtener los precios",
+      "retry": "Reintentar",
+      "loading": "Cargando precios...",
+      "chartTitle": "Historial de Precios",
+      "dateColumn": "Fecha",
+      "fuel": "Combustible",
+      "priceColumn": "Precio (SEK)",
+      "eurColumn": "EUR",
+      "noData": "Sin datos disponibles",
+      "nativeColumn": "Moneda local",
+      "sekColumn": "SEK"
+    },
+    "compare": {
+      "title": "Comparativa Regional",
+      "country": "País",
+      "fuel": "Combustible",
+      "priceSEK": "Precio (SEK)",
+      "error": "No se pudo comparar los precios",
+      "unavailable": "Datos no disponibles",
+      "noData": "Sin datos de comparación",
+      "countrySE": "Suecia",
+      "countryDK": "Dinamarca",
+      "countryFI": "Finlandia",
+      "countryNO": "Noruega",
+      "countryIS": "Islandia",
+      "sekLabel": "SEK"
+    },
+    "tax": {
+      "title": "Desglose de Impuestos",
+      "product": "Coste del Producto",
+      "excise": "Impuesto Especial",
+      "vat": "IVA",
+      "other": "Otros Impuestos",
+      "fuel": "Combustible",
+      "error": "No se pudo obtener el desglose fiscal",
+      "derivedNote": "Estimado según valores de referencia suecos — desglose real no disponible",
+      "noData": "Sin datos fiscales",
+      "sekLabel": "SEK",
+      "total": "Total",
+      "base": "Precio Base",
+      "legend": "Simbología de colores — segmentos por combustible"
+    },
+    "seasonality": {
+      "title": "Tendencias Estacionales",
+      "month": "Mes",
+      "insufficientData": "Datos insuficientes — se necesitan al menos 3 meses de historial",
+      "error": "No se pudieron obtener datos estacionales",
+      "noData": "Sin datos estacionales",
+      "peak": "Máximo",
+      "sekLabel": "SEK",
+      "months": {
+        "0": "ene",
+        "1": "feb",
+        "2": "mar",
+        "3": "abr",
+        "4": "may",
+        "5": "jun",
+        "6": "jul",
+        "7": "ago",
+        "8": "sep",
+        "9": "oct",
+        "10": "nov",
+        "11": "dic"
+      }
+    },
+    "tank": {
+      "title": "Calculadora de Tanque",
+      "liters": "Tamaño del tanque (litros)",
+      "inputLabel": "Capacidad del tanque en litros",
+      "cost": "Llenar {{liters}}L cuesta",
+      "vs": "vs",
+      "native": "en {{currency}}",
+      "savings": "Ahorras {{amount}} kr con {{fuel}}",
+      "noSaving": "Mismo precio para ambos combustibles",
+      "error": "No se pudo calcular el costo",
+      "noPrice": "Datos de precio no disponibles",
+      "retry": "Recalcular",
+      "savingsLabel": "Diferencia Euro 95 vs Diésel",
+      "recalc": "Actualizar",
+      "savingsPositive": "Ahorras",
+      "savingsNegative": "Diésel es más barato",
+      "costValue": "Llenar {{liters}}L cuesta {{amount}}"
+    },
+    "trend": {
+      "up": "subida",
+      "down": "bajada",
+      "neutral": "estable"
+    },
+    "onboarding": {
+      "message": "👋 Selecciona tu país para ver los precios de combustible. Desplázate hacia abajo para gráficos y calculadora de ahorro.",
+      "dismissAria": "Cerrar mensaje de bienvenida",
+      "gotIt": "Entendido",
+      "backToTop": "Volver arriba"
+    },
+    "hero": {
+      "eyebrow": "Panel nórdico",
+      "title": "Precios claros para decisiones rápidas.",
+      "subtitle": "Compara el precio actual, entiende su evolución y calcula cuánto costará llenar tu depósito.",
+      "cacheNote": "Mostrando datos sincronizados"
+    },
+    "market": {
+      "title": "Mercado seleccionado",
+      "subtitle": "Moneda local"
+    },
+    "current": {
+      "title": "Precio actual",
+      "updatedLabel": "Última actualización",
+      "updatedMeta": "Fuente pública",
+      "dataNote": "Datos públicos"
+    },
+    "charts": {
+      "title": "Lecturas de mercado",
+      "subtitle": "Comparativa visual · últimos 12 meses",
+      "fuelLabel": "Gasolina 95 · kr/l",
+      "compareSubtitle": "Precio medio actual · kr/l",
+      "taxSubtitle": "Gasolina 95 · composición",
+      "seasonSubtitle": "Índice relativo por mes",
+      "months": "meses",
+      "markets": "mercados",
+      "year": "2026"
+    },
+    "tokens": {
+      "title": "Panel de tokens",
+      "subtitle": "Fuente de verdad visual · claro ↔ oscuro",
+      "badge": "tokens",
+      "role": "Rol",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "usage": "Uso",
+      "bgUsage": "Canvas",
+      "surfaceUsage": "Tarjetas e inputs",
+      "textUsage": "Contenido principal",
+      "primaryUsage": "Acción y selección",
+      "accentUsage": "Highlights y avisos"
+    }
+  },
+  "paginator": {
+    "aria": "Paginación de tabla",
+    "prev": "Página anterior",
+    "next": "Página siguiente",
+    "page": "Página"
+  },
+  "header": {
+    "online": "Datos sincronizados",
+    "offline": "Sin conexión"
+  }
+}

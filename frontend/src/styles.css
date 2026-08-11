@@ -1,0 +1,235 @@
+/* NordicPump — Global Styles & Tailwind v4 Design Tokens
+   Source of truth: ../../DESIGN.md + nordicpump-redesign.html
+   ========================================================================== */
+
+/* ---- Fonts: served via Google Fonts CDN — see src/index.html <head> ---- */
+
+/* ---- Tailwind v4 (CSS-first, no tailwind.config.js) ---- */
+@import "tailwindcss";
+
+/* ---- Design Tokens — Light (default) ---- */
+@theme {
+  /* Colors */
+  --color-primary: #1E40AF;
+  --color-on-primary: #FFFFFF;
+  --color-primary-hover: #1D4ED8;
+  --color-secondary: #3B82F6;
+  --color-sky: #0EA5E9;
+  --color-sky: #0EA5E9;
+  --color-on-secondary: #FFFFFF;
+  --color-accent: #F59E0B;
+  --color-on-accent: #1E3A8A;
+  --color-accent-hover: #D97706;
+  --color-text: #1E3A8A;
+  --color-text-muted: #475569;
+  --color-text-subtle: #64748B;
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F1F5F9;
+  --color-hairline: #E2E8F0;
+  --color-hairline-strong: #CBD5E1;
+
+  /* Chart colors */
+  --color-chart-low: #16A34A;
+  --color-chart-mid: #F59E0B;
+  --color-chart-high: #DC2626;
+  --color-chart-vat: #3B82F6;
+  --color-chart-other: #64748B;
+  --color-chart-unavailable: #94A3B8;
+
+  /* Typography */
+  --font-body: "Fira Sans", sans-serif;
+  --font-mono: "Fira Code", monospace;
+
+  /* Type scale */
+  --text-display: clamp(28px, 5vw, 46px);
+  --text-display--line-height: 1.05;
+  --text-display--letter-spacing: -0.045em;
+  --text-h1: clamp(24px, 4vw, 32px);
+  --text-h1--line-height: 1.2;
+  --text-h1--letter-spacing: -0.01em;
+  --text-h2: 20px;
+  --text-h2--line-height: 1.2;
+  --text-h2--letter-spacing: -0.02em;
+  --text-h3: 15px;
+  --text-h3--line-height: 1.25;
+  --text-body: 15px;
+  --text-body--line-height: 1.55;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 1.45;
+  --text-caption: 12px;
+  --text-caption--line-height: 1.4;
+
+  /* Border radius — updated from redesign */
+  --radius-sm: 10px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+}
+
+/* ---- CSS Custom Properties (runtime access for Chart.js) ---- */
+:root {
+  color-scheme: light;
+
+  --color-primary: #1E40AF;
+  --color-on-primary: #FFFFFF;
+  --color-primary-hover: #1D4ED8;
+  --color-secondary: #3B82F6;
+  --color-accent: #F59E0B;
+  --color-on-accent: #1E3A8A;
+  --color-text: #1E3A8A;
+  --color-text-muted: #475569;
+  --color-text-subtle: #64748B;
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F1F5F9;
+  --color-hairline: #E2E8F0;
+  --color-hairline-strong: #CBD5E1;
+
+  --color-chart-low: #16A34A;
+  --color-chart-mid: #F59E0B;
+  --color-chart-high: #DC2626;
+  --color-chart-vat: #3B82F6;
+  --color-chart-other: #64748B;
+  --color-chart-unavailable: #94A3B8;
+
+  --font-body: "Fira Sans", sans-serif;
+  --font-mono: "Fira Code", monospace;
+
+  /* Redesign additions */
+  --shadow: 0 8px 24px rgba(30, 58, 138, .08);
+  --radius: 14px;
+  --radius-sm: 10px;
+  --transition: 200ms ease;
+}
+
+/* ---- Dark Theme ---- */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-background: #0C1422;
+  --color-surface: #111C30;
+  --color-surface-muted: #182741;
+  --color-hairline: #243650;
+  --color-hairline-strong: #35496B;
+
+  --color-text: #E6EDF7;
+  --color-text-muted: #A9B9D2;
+  --color-text-subtle: #7E93B5;
+
+  --color-primary: #60A5FA;
+  --color-on-primary: #0C1422;
+  --color-primary-hover: #93C5FD;
+  --color-secondary: #7CB8F7;
+  --color-sky: #38BDF8;
+
+  --color-chart-low: #22C55E;
+  --color-chart-mid: #F59E0B;
+  --color-chart-high: #F87171;
+  --color-chart-vat: #60A5FA;
+  --color-chart-other: #7E93B5;
+  --color-chart-unavailable: #4A5C7E;
+
+  --shadow: 0 12px 30px rgba(0, 0, 0, .22);
+}
+
+/* ---- Global Reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-family: var(--font-body, "Fira Sans", sans-serif);
+  line-height: 1.55;
+  background: var(--color-background);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font: 15px/1.55 'Fira Sans', system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  transition: background var(--transition), color var(--transition);
+}
+
+/* Fira Code for numeric/monospace elements */
+code,
+pre,
+kbd,
+samp,
+.mono,
+.font-mono {
+  font-family: var(--font-mono, "Fira Code", monospace);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Responsive images */
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+/* Focus ring — amber accent from redesign */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Touch target minimum for interactive elements */
+button,
+select,
+summary {
+  min-height: 44px;
+}
+
+button,
+summary {
+  cursor: pointer;
+}
+
+/* Button hover/active transforms from redesign */
+button:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+button:not(:disabled):active {
+  transform: translateY(1px);
+}
+
+button:not(:disabled),
+select,
+input[type="range"] {
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease,
+              box-shadow 150ms ease, transform 100ms ease;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app-shell",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.js",
+          "/*.css"
+        ]
+      }
+    },
+    {
+      "name": "assets-cache",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/i18n/*.json",
+          "/icons/**"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-prices",
+      "urls": [
+        "/api/v1/prices/se",
+        "/api/v1/prices/dk",
+        "/api/v1/prices/fi",
+        "/api/v1/prices/no"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 50,
+        "maxAge": "24h",
+        "timeout": "10s"
+      }
+    },
+    {
+      "name": "api-prices-wildcard",
+      "urls": [
+        "/api/v1/prices/*"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 50,
+        "maxAge": "24h",
+        "timeout": "10s"
+      }
+    }
+  ],
+  "navigationRequestStrategy": "freshness"
+}

@@ -1,0 +1,42 @@
+{
+  "$comment": "Single source of truth for Nordic countries + currencies. Generate code with: python scripts/generate_countries.py",
+  "countries": {
+    "SE": {
+      "currency": "SEK",
+      "source": "fuel-prices-eu",
+      "freshness_window": "eu_cache_window_days",
+      "rates_public": true
+    },
+    "DK": {
+      "currency": "DKK",
+      "source": "fuel-prices-eu",
+      "freshness_window": "eu_cache_window_days",
+      "rates_public": true
+    },
+    "FI": {
+      "currency": "EUR",
+      "source": "fuel-prices-eu",
+      "freshness_window": "eu_cache_window_days",
+      "rates_public": false
+    },
+    "NO": {
+      "currency": "NOK",
+      "source": "ssb-no",
+      "freshness_window": "ssb_cache_window_days",
+      "rates_public": true
+    },
+    "IS": {
+      "currency": "ISK",
+      "source": "iceland-is",
+      "freshness_window": "iceland_cache_window_days",
+      "rates_public": false
+    }
+  },
+  "currencies": {
+    "SEK": { "symbol": "kr", "locale": "sv-SE" },
+    "EUR": { "symbol": "€", "locale": "sv-SE" },
+    "DKK": { "symbol": "kr", "locale": "da-DK" },
+    "NOK": { "symbol": "kr", "locale": "nb-NO" },
+    "ISK": { "symbol": "kr", "locale": "is-IS" }
+  }
+}

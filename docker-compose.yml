@@ -1,0 +1,32 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - cache-data:/app/cache
+    environment:
+      - FUEL_PRICES_EU_URL=${FUEL_PRICES_EU_URL:-https://www.fuel-prices.eu/llms.txt}
+      - SSB_API_URL=${SSB_API_URL:-https://data.ssb.no/api/v0/en/table/09654}
+      - ECB_API_URL=${ECB_API_URL:-https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml}
+      - EU_CACHE_WINDOW_DAYS=${EU_CACHE_WINDOW_DAYS:-7}
+      - SSB_CACHE_WINDOW_DAYS=${SSB_CACHE_WINDOW_DAYS:-30}
+      - EUR_SEK_FALLBACK=${EUR_SEK_FALLBACK:-11.50}
+      - EUR_DKK_FALLBACK=${EUR_DKK_FALLBACK:-7.45}
+      - EUR_NOK_FALLBACK=${EUR_NOK_FALLBACK:-12.00}
+      - DEV_MODE=true
+      - RETRY_AFTER_SECONDS=${RETRY_AFTER_SECONDS:-300}
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  cache-data:

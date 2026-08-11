@@ -1,0 +1,39 @@
+# ── Dependencies ─────────────────────────────
+backend/.venv/
+frontend/node_modules/
+
+# ── Python caches ────────────────────────────
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Angular ──────────────────────────────────
+frontend/.angular/
+frontend/dist/
+frontend/coverage/
+
+# ── Runtime file-based cache (JSON only — .py files in backend/cache are code) ──
+backend/cache/*.json
+
+# ── Knowledge graph (generated) ──────────────
+graphify-out/
+backend/graphify-out/
+frontend/graphify-out/
+*.backup-*/
+graphify-out.backup-*/
+
+# ── Playwright MCP artifacts ─────────────────
+.playwright-mcp/
+
+# ── Session screenshots (root-level only) ────
+/*.png
+
+# ── OS / editor ──────────────────────────────
+.DS_Store
+*.swp
+
+# ── Agent workspace metadata ────────────
+.atl/
+backend/.coverage

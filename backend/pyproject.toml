@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nordicpump-backend"
+version = "0.1.0"
+description = "NordicPump API — proxy normalizing Nordic fuel prices (SE/DK/FI/NO) from multiple official sources."
+requires-python = ">=3.14"
+license = { text = "MIT" }
+dependencies = [
+    "litestar>=2.15,<3",
+    "httpx>=0.28,<1",
+    "pydantic-settings>=2.9,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+    "pytest-asyncio>=1.0,<2",
+    "respx>=0.22,<1",
+    "pytest-cov>=6,<7",
+    "ruff>=0.12,<1",
+    "mypy>=1.16,<2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["models"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+pythonpath = ["."]
+markers = [
+    "unit: Fast unit tests with mocked dependencies",
+    "integration: Slower tests exercising real paths",
+]
+
+[tool.hatch.envs.default]
+scripts = {test-unit = "pytest -m unit -v", test-integration = "pytest -m integration -v", test-all = "pytest -v"}
+
+[tool.ruff]
+target-version = "py314"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+explicit_package_bases = true
+exclude = ["tests/"]
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+ignore_errors = true

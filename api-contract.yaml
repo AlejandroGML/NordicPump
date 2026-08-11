@@ -89,17 +89,22 @@ endpoints:
           - "TankCalculatorComponent (live conversion)"
           - "PriceCurrentComponent (currency display)"
 
-# Explicit cross-repo edges (for knowledge graph enrichment):
+# Explicit cross-repo edges (consumed by scripts/inject_contract_edges.py —
+# matches real code nodes by exact source_file, not by label).
 cross_repo_edges:
   - frontend: "PriceApiService"
+    frontend_file: "frontend/src/app/core/services/price-api.service.ts"
     endpoint: "/api/v1/prices/{country}"
     backend_handler: "prices_endpoint"
     backend_service: "PriceQueryService"
+    backend_service_file: "backend/services/price_query.py"
     relation: "calls_via_http"
   - frontend: "CurrencyService"
+    frontend_file: "frontend/src/app/core/services/currency.service.ts"
     endpoint: "/api/v1/rates"
     backend_handler: "rates_endpoint"
     backend_service: "IngestionPipeline"
+    backend_service_file: "backend/services/ingestion_pipeline.py"
     relation: "calls_via_http"
   - backend_service: "PriceQueryService"
     backend_dependency: "CacheStore"

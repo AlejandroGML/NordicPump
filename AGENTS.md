@@ -76,9 +76,27 @@ nb→NOK, fi/en/es→EUR, is→ISK; manual override via CurrencySwitcher.
 - Use `afterRenderEffect` (not `effect()`) to measure DOM sizes — plain effects
   run before render and read stale geometry (e.g. banner height 0).
 
+## Countries & currencies — single source of truth
+
+`countries.json` (repo root) is the SINGLE source of truth for country/currency
+data. Generated files are marked DO NOT EDIT:
+
+- `backend/models/countries.py` — Country enum + CountryMeta + derived maps
+  (COUNTRY_SOURCE, SOURCE_WINDOW_DAYS, RATE_KEYS, VALID_COUNTRIES)
+- `frontend/src/app/shared/models/country.ts` — Country type + COUNTRY_CODES
+- `frontend/src/app/shared/currency-switcher/currencies.ts` — Currency type +
+  CURRENCIES + CURRENCY_SYMBOLS + CURRENCY_LOCALES
+
+**Adding a new country/currency = edit `countries.json` + run
+`python scripts/generate_countries.py`** — that's it. Translation keys
+(`country.X` in i18n files) and flag SVGs (`frontend/.../constants/flags.ts`)
+are still manual (UI copy, type-checked by Record<Country, ...>).
+
 ## Conventions
 
 - Conventional commits only; never add AI attribution lines.
+- Pre-commit hook runs ruff + mypy + pytest + vitest (scripts/pre-commit.sh,
+  installed via scripts/install-precommit.sh). Commit only when all pass.
 - pnpm, never npm. Tests: AAA pattern, behavior-describing names, 80%+ target.
 - i18n keys added to ALL 6 language files; UI copy in user language, code in English.
 - OpenSpec workflow for features: `openspec/` (proposal → spec → tasks → apply → verify).

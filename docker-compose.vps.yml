@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: /opt/nordicpump
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - '80:8000'
+    environment:
+      - FRONTEND_DIST_DIR=/app/frontend-dist
+      # NordicPump has no DB/Redis — cache is file-based JSON with atomic writes.
+      # No secrets required: all upstream APIs (fuel-prices.eu, SSB, gasvaktin,
+      # ECB, open.er-api.com) are public. Settings read .env if present (empty).
+    volumes:
+      - appdata:/app/cache
+    healthcheck:
+      test: ['CMD', 'python', '-c', 'import urllib.request; urllib.request.urlopen("http://localhost:8000/health")']
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+volumes:
+  appdata:

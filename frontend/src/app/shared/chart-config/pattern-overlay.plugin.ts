@@ -34,7 +34,7 @@ const chartHashes = new WeakMap<Chart, string | null>();
 export const patternOverlayPlugin: Plugin = {
   id: 'patternOverlay',
 
-  beforeDraw(chart) {
+  beforeDraw(chart: Chart) {
     const newHash = simpleDataHash(chart);
     if (chartHashes.get(chart) === newHash) return;
     chartHashes.set(chart, newHash);

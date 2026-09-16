@@ -1,0 +1,11 @@
+# Native/binary postinstalls are not needed for the build — esbuild and
+# @parcel/watcher ship prebuilt binaries via optional dependencies.
+allowBuilds:
+  '@parcel/watcher': false
+  core-js: false
+  esbuild: false
+  lmdb: false
+  msgpackr-extract: false
+# The Dockerfile installs deps in the layer above — no pre-run reinstall
+verifyDepsBeforeRun: false
+

@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:
-      - '80:8000'
+      - '127.0.0.1:8081:8000' # only the reverse proxy reaches the app (80 is Caddy's)
     environment:
       - FRONTEND_DIST_DIR=/app/frontend-dist
       # NordicPump has no DB/Redis — cache is file-based JSON with atomic writes.

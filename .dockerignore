@@ -1,0 +1,10 @@
+# Build context hygiene
+.git
+**/node_modules
+**/__pycache__
+**/dist
+**/.angular
+**/.venv
+graphify-out*
+/*.png
+/*.md
